@@ -1,6 +1,6 @@
 # Tilix (Cytracon) — Omarchy plugin
 
-**What it is.** [Cytracon Tilix](https://github.com/cytracon/tilix) is the tiling terminal for Omarchy: split panes, bookmarks, AI CLIs (Grok, Codex, or your own), and ops commands. Use it as Super+Return.
+**What it is.** [Cytracon Tilix](https://github.com/cytracon/omarchy-cytracon-tilix) is the tiling terminal for Omarchy: split panes, bookmarks, AI CLIs (Grok, Codex, or your own), and ops commands. Use it as Super+Return.
 
 This plugin is the bar UI for that terminal: installed version, then a launch into Tilix. If Tilix is missing, the panel runs `omarchy install tilix` (terminal + this plugin).
 
@@ -15,7 +15,7 @@ omarchy install tilix
 Or add the widget first, then click **Install Tilix** in the panel:
 
 ```bash
-omarchy plugin add https://github.com/cytracon/omarchy-tilix.git --enable
+omarchy plugin add https://github.com/cytracon/omarchy-cytracon-bar-tilix.git --enable
 ```
 
 The widget lands in the left bar section.
@@ -36,7 +36,7 @@ User-local, no root. On Omarchy:
 omarchy install tilix
 ```
 
-That writes `~/.local/libexec/tilix`, a Wayland wrapper at `~/.local/bin/tilix`, Hyprland rules, and `xdg-terminal-exec` keys so Super+Return can use Tilix. App docs: [cytracon/tilix](https://github.com/cytracon/tilix). Removing this plugin does not uninstall Tilix.
+That writes `~/.local/libexec/tilix`, a Wayland wrapper at `~/.local/bin/tilix`, Hyprland rules, and `xdg-terminal-exec` keys so Super+Return can use Tilix. App docs: [cytracon/omarchy-cytracon-tilix](https://github.com/cytracon/omarchy-cytracon-tilix). Removing this plugin does not uninstall Tilix.
 
 ## What the panel shows
 
@@ -73,7 +73,7 @@ Upstream: [gnunn1/tilix](https://github.com/gnunn1/tilix) (MPL-2.0). This plugin
 - Left-click toggles the panel
 - Right-click runs `$HOME/.local/bin/tilix`, or installs Tilix if missing
 - Install runs `omarchy install tilix` in a floating terminal
-- “Source” opens `https://github.com/cytracon/tilix` via `omarchy-launch-browser`
+- “Source” opens `https://github.com/cytracon/omarchy-cytracon-tilix` via `omarchy-launch-browser`
 
 Omarchy plugins run unsandboxed. Review `Panel.qml` before enabling.
 

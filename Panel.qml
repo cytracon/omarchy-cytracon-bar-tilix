@@ -12,7 +12,7 @@ Panel {
   manageIpc: false
 
   readonly property string shippedVersion: "1.9.8-cytracon.12"
-  readonly property string sourceUrl: "https://github.com/cytracon/tilix"
+  readonly property string sourceUrl: "https://github.com/cytracon/omarchy-cytracon-tilix"
   readonly property string tilixBin: Quickshell.env("HOME") + "/.local/bin/tilix"
   readonly property color foreground: bar ? bar.foreground : Color.foreground
   readonly property color dim: Qt.darker(foreground, 1.55)
@@ -186,7 +186,7 @@ Panel {
         ActionRow {
           width: parent.width
           title: "Source"
-          hint: "github.com/cytracon/tilix"
+          hint: "github.com/cytracon/omarchy-cytracon-tilix"
           selected: root.cursorActive && root.actionIndex === 1
           enabled: true
           onClicked: root.openSource()
